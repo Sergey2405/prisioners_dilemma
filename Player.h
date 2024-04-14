@@ -3,7 +3,7 @@
 
 #include "Dilema.h"
 
-class Player :public Dilema
+class Player : public Dilema
 {
 public:
     Player();
