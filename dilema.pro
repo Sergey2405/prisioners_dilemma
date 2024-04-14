@@ -10,11 +10,13 @@ CONFIG += c++11
 
 SOURCES += \
     Dilema.cpp \
+    Player.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     Dilema.h \
+    Player.h \
     mainwindow.h
 
 FORMS += \
