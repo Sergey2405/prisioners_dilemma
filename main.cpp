@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "Dilema.h"
 
 #include <QApplication>
 
