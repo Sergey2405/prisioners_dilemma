@@ -20,6 +20,6 @@ void DilemaFactory::playSeries(int player1Ix, int player2Ix, int numberOfGames)
         toPrint1 += " " + QString::number(m_players[player1Ix]->history().at(i));
         toPrint2 += " " + QString::number(m_players[player2Ix]->history().at(i));
     }
-    qDebug() << "Series player1" << toPrint1;
-    qDebug() << "Series player2" << toPrint2;
+    qDebug() << "Series player1" << toPrint1 << "\tbalance:" << m_players[player1Ix]->balance();
+    qDebug() << "Series player2" << toPrint2 << "\tbalance:" << m_players[player2Ix]->balance();
 }
