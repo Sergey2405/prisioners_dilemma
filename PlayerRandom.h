@@ -1,14 +1,14 @@
 #ifndef PLAYERRANDOM_H
 #define PLAYERRANDOM_H
 
-#include "Dilema.h"
+#include "Player.h"
 
-class PlayerRandom : public Dilema
+class PlayerRandom : public Player
 {
 public:
     PlayerRandom();
 
-    void playGame(Dilema *oponent);
+    void playGame(Player *oponent);
 };
 
 #endif // PLAYERRANDOM_H

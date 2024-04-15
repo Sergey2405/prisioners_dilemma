@@ -2,7 +2,7 @@
 #include "QDebug"
 
 DilemaFactory::DilemaFactory() :
-    m_players(QList<Dilema*>())
+    m_players(QList<Player*>())
 {
     m_players.push_back(new PlayerRandom());
     m_players.push_back(new PlayerRandom());

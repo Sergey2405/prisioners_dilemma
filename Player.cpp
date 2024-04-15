@@ -1,11 +1,11 @@
-#include "Dilema.h"
+#include "Player.h"
 
-Dilema::Dilema()
+Player::Player()
 {
     m_balance = 0;
 }
 
-void Dilema::playGame0(Dilema *oponent, bool silentOponent, bool silent)
+void Player::playGame0(Player *oponent, bool silentOponent, bool silent)
 {
     if(silentOponent && silent) {
         m_history.push_back(3);
@@ -29,7 +29,7 @@ void Dilema::playGame0(Dilema *oponent, bool silentOponent, bool silent)
     }
 }
 
-QList<qint8> Dilema::history()
+QList<qint8> Player::history()
 {
     return m_history;
 }

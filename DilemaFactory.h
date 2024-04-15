@@ -11,7 +11,7 @@ public:
     void playSeries(int player1Ix, int player2Ix, int numberOfGames);
 
 protected:
-    QList<Dilema*> m_players;
+    QList<Player*> m_players;
 
 };
 

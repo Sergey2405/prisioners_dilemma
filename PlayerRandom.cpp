@@ -1,5 +1,5 @@
 #include "PlayerRandom.h"
-#include "Dilema.h"
+#include "Player.h"
 #include <QRandomGenerator>
 
 PlayerRandom::PlayerRandom()
@@ -7,7 +7,7 @@ PlayerRandom::PlayerRandom()
 
 }
 
-void PlayerRandom::playGame(Dilema *oponent)
+void PlayerRandom::playGame(Player *oponent)
 {
     playGame0(oponent, QRandomGenerator::global()->generate() % 2 == 0, QRandomGenerator::global()->generate() % 2 == 0);
 
