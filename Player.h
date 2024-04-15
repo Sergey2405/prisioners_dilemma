@@ -6,6 +6,8 @@
 #define PLAYER_LOSE_LOSE    1
 #define PLAYER_LOSE_WIN     0
 
+#define PLAYER_PAY_GAME     1
+
 #include <QObject>
 
 class Player
@@ -14,7 +16,7 @@ public:
     Player();
 //    virtual ~Dilema;
 
-    void playGame(Player *oponent,  bool silentOponent, bool silent);
+    void playGame(Player *opponent, bool complyPlayer,  bool complyOpponent);
     virtual void playGame(Player *oponent) = 0;
     QList<qint8> history();
     int balance();

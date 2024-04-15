@@ -5,29 +5,31 @@ Player::Player()
     m_balance = 0;
 }
 
-void Player::playGame(Player *oponent, bool silentOponent, bool silent)
+void Player::playGame(Player *opponent, bool complyPlayer, bool complyOpponent )
 {
-    if(silentOponent && silent) {
+    if(complyPlayer && complyOpponent) {
         m_history.push_back(PLAYER_WIN_WIN);
         m_balance += PLAYER_WIN_WIN;
-        oponent->m_history.push_back(PLAYER_WIN_WIN);
-        oponent->m_balance += PLAYER_WIN_WIN;
-    } else if(silentOponent && !silent) {
+        opponent->m_history.push_back(PLAYER_WIN_WIN);
+        opponent->m_balance += PLAYER_WIN_WIN;
+    } else if(complyPlayer && !complyOpponent) {
         m_history.push_back(PLAYER_LOSE_WIN);
         m_balance += PLAYER_LOSE_WIN;
-        oponent->m_history.push_back(PLAYER_WIN_LOSE);
-        oponent->m_balance += PLAYER_WIN_LOSE;
-    } else if(!silentOponent && silent) {
-        m_history.push_back(PLAYER_LOSE_WIN);
-        m_balance += PLAYER_LOSE_WIN;
-        oponent->m_history.push_back(PLAYER_WIN_LOSE);
-        oponent->m_balance += PLAYER_WIN_LOSE;
+        opponent->m_history.push_back(PLAYER_WIN_LOSE);
+        opponent->m_balance += PLAYER_WIN_LOSE;
+    } else if(!complyPlayer && complyOpponent) {
+        m_history.push_back(PLAYER_WIN_LOSE);
+        m_balance += PLAYER_WIN_LOSE;
+        opponent->m_history.push_back(PLAYER_LOSE_WIN);
+        opponent->m_balance += PLAYER_LOSE_WIN;
     } else {
         m_history.push_back(PLAYER_LOSE_LOSE);
         m_balance += PLAYER_LOSE_LOSE;
-        oponent->m_history.push_back(PLAYER_LOSE_LOSE);
-        oponent->m_balance += PLAYER_LOSE_LOSE;
+        opponent->m_history.push_back(PLAYER_LOSE_LOSE);
+        opponent->m_balance += PLAYER_LOSE_LOSE;
     }
+    m_balance -= PLAYER_PAY_GAME;
+    opponent->m_balance -= PLAYER_PAY_GAME;
 }
 
 QList<qint8> Player::history()
