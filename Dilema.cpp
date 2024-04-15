@@ -5,7 +5,7 @@ Dilema::Dilema()
     m_balance = 0;
 }
 
-void Dilema::playGame(Dilema *oponent, bool silentOponent, bool silent)
+void Dilema::playGame0(Dilema *oponent, bool silentOponent, bool silent)
 {
     if(silentOponent && silent) {
         m_history.push_back(3);

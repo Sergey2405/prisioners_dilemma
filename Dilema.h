@@ -9,7 +9,8 @@ public:
     Dilema();
 //    virtual ~Dilema;
 
-    void playGame(Dilema *oponent,  bool silentOponent, bool silent);
+    void playGame0(Dilema *oponent,  bool silentOponent, bool silent);
+    virtual void playGame(Dilema *oponent) = 0;
     QList<qint8> history();
 
 protected:
