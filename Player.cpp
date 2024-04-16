@@ -32,6 +32,11 @@ void Player::playGame(Player *opponent, bool complyPlayer, bool complyOpponent )
     opponent->m_balance -= PLAYER_PAY_GAME;
 }
 
+void Player::playGame(Player *opponent)
+{
+    Player::playGame(opponent, comply(), opponent->comply());
+}
+
 bool Player::comply()
 {
     return PLAYER_DEFAULT_COMPLY;

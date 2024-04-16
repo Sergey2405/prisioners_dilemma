@@ -8,7 +8,6 @@ class PlayerRandom : public Player
 public:
     PlayerRandom();
 
-    void playGame(Player *opponent) override;
     virtual bool comply() override;
 
 };

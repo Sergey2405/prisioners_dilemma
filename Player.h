@@ -18,7 +18,7 @@ public:
 //    virtual ~Dilema;
 
     void playGame(Player *opponent, bool complyPlayer,  bool complyOpponent);
-    virtual void playGame(Player *oponent) = 0;
+    virtual void playGame(Player *opponent);
     virtual bool comply();
     QList<qint8> history();
     int balance();
