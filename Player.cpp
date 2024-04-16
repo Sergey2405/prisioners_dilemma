@@ -2,7 +2,12 @@
 
 Player::Player()
 {
-    m_balance = 0;
+    m_balance = PLAYER_INITIAL_BALANCE;
+}
+
+Player::~Player()
+{
+
 }
 
 void Player::playGame(Player *opponent, bool complyPlayer, bool complyOpponent )

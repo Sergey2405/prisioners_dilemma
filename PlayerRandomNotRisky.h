@@ -8,9 +8,7 @@ class PlayerRandomNotRisky : public Player
 public:
     PlayerRandomNotRisky();
 
-//    void playGame(Player *opponent) override;
     virtual bool comply() override;
-//    bool comply();
 };
 
 #endif // PLAYERRANDOMNOTRISKY_H

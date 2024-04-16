@@ -1,6 +1,5 @@
 #include "PlayerRandom.h"
 #include "Player.h"
-#include <QRandomGenerator>
 
 PlayerRandom::PlayerRandom()
 {

@@ -2,6 +2,7 @@
 #define DILEMAFACTORY_H
 
 #include "PlayerRandom.h"
+#include "PlayerRandomNotRisky.h"
 
 class DilemaFactory
 {
