@@ -8,7 +8,9 @@ class PlayerRandom : public Player
 public:
     PlayerRandom();
 
-    void playGame(Player *oponent);
+    void playGame(Player *opponent) override;
+    virtual bool comply() override;
+
 };
 
 #endif // PLAYERRANDOM_H

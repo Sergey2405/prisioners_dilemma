@@ -32,6 +32,11 @@ void Player::playGame(Player *opponent, bool complyPlayer, bool complyOpponent )
     opponent->m_balance -= PLAYER_PAY_GAME;
 }
 
+bool Player::comply()
+{
+    return PLAYER_DEFAULT_COMPLY;
+}
+
 QList<qint8> Player::history()
 {
     return m_history;

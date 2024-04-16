@@ -7,8 +7,13 @@ PlayerRandom::PlayerRandom()
 
 }
 
-void PlayerRandom::playGame(Player *oponent)
+void PlayerRandom::playGame(Player *opponent)
 {
-    Player::playGame(oponent, QRandomGenerator::global()->generate() % 2 == 0, QRandomGenerator::global()->generate() % 2 == 0);
+    Player::playGame(opponent, comply(), opponent->comply());
 
+}
+
+bool PlayerRandom::comply()
+{
+    return QRandomGenerator::global()->generate() % 2 == 0;
 };
