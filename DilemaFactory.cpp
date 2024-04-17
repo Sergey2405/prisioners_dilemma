@@ -7,7 +7,8 @@ DilemaFactory::DilemaFactory() :
 //    m_players.push_back(new PlayerRandom());
 //    m_players.push_back(new PlayerRandomNotRisky());
     m_players.push_back(new PlayerAltruist());
-    m_players.push_back(new PlayerGreed);
+    m_players.push_back(new PlayerAltruistNotRisky());
+//    m_players.push_back(new PlayerGreed);
     playSeries(0,1,50);
 }
 

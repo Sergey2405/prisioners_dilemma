@@ -12,6 +12,7 @@ SOURCES += \
     DilemaFactory.cpp \
     Player.cpp \
     PlayerAltruist.cpp \
+    PlayerAltruistNotRisky.cpp \
     PlayerGreed.cpp \
     PlayerRandom.cpp \
     PlayerRandomNotRisky.cpp \
@@ -22,6 +23,7 @@ HEADERS += \
     DilemaFactory.h \
     Player.h \
     PlayerAltruist.h \
+    PlayerAltruistNotRisky.h \
     PlayerGreed.h \
     PlayerRandom.h \
     PlayerRandomNotRisky.h \
