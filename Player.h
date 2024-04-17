@@ -7,18 +7,20 @@
 #define PLAYER_LOSE_WIN         0
 
 #define PLAYER_PAY_GAME         1
-#define PLAYER_DEFAULT_COMPLY true
+#define PLAYER_DEFAULT_COMPLY   true
+#define PLAYER_INITIAL_BALANCE  +20
 
+#include <QRandomGenerator>
 #include <QObject>
 
 class Player
 {
 public:
     Player();
-//    virtual ~Dilema;
+    virtual ~Player();
 
     void playGame(Player *opponent, bool complyPlayer,  bool complyOpponent);
-    virtual void playGame(Player *oponent) = 0;
+    virtual void playGame(Player *opponent);
     virtual bool comply();
     QList<qint8> history();
     int balance();

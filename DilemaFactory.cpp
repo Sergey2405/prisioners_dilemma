@@ -5,8 +5,8 @@ DilemaFactory::DilemaFactory() :
     m_players(QList<Player*>())
 {
     m_players.push_back(new PlayerRandom());
-    m_players.push_back(new PlayerRandom());
-    playSeries(0,1,10);
+    m_players.push_back(new PlayerRandomNotRisky());
+    playSeries(0,1,50);
 }
 
 void DilemaFactory::playSeries(int player1Ix, int player2Ix, int numberOfGames)

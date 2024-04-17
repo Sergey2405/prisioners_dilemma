@@ -12,6 +12,7 @@ SOURCES += \
     DilemaFactory.cpp \
     Player.cpp \
     PlayerRandom.cpp \
+    PlayerRandomNotRisky.cpp \
     main.cpp \
     mainwindow.cpp
 
@@ -19,6 +20,7 @@ HEADERS += \
     DilemaFactory.h \
     Player.h \
     PlayerRandom.h \
+    PlayerRandomNotRisky.h \
     mainwindow.h
 
 FORMS += \

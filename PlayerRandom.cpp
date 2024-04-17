@@ -1,15 +1,8 @@
 #include "PlayerRandom.h"
 #include "Player.h"
-#include <QRandomGenerator>
 
 PlayerRandom::PlayerRandom()
 {
-
-}
-
-void PlayerRandom::playGame(Player *opponent)
-{
-    Player::playGame(opponent, comply(), opponent->comply());
 
 }
 
