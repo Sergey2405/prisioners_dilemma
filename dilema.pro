@@ -11,6 +11,7 @@ CONFIG += c++11
 SOURCES += \
     DilemaFactory.cpp \
     Player.cpp \
+    PlayerAltruist.cpp \
     PlayerRandom.cpp \
     PlayerRandomNotRisky.cpp \
     main.cpp \
@@ -19,6 +20,7 @@ SOURCES += \
 HEADERS += \
     DilemaFactory.h \
     Player.h \
+    PlayerAltruist.h \
     PlayerRandom.h \
     PlayerRandomNotRisky.h \
     mainwindow.h
