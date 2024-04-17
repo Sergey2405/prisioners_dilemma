@@ -3,6 +3,7 @@
 
 #include "PlayerRandom.h"
 #include "PlayerRandomNotRisky.h"
+#include "PlayerAltruist.h"
 
 class DilemaFactory
 {

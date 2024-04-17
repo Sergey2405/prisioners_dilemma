@@ -4,3 +4,8 @@ PlayerAltruist::PlayerAltruist()
 {
 
 }
+
+bool PlayerAltruist::comply()
+{
+    return true;
+}
