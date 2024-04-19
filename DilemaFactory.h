@@ -3,6 +3,9 @@
 
 #include "PlayerRandom.h"
 #include "PlayerRandomNotRisky.h"
+#include "PlayerAltruist.h"
+#include "PlayerGreed.h"
+#include "PlayerAltruistNotRisky.h"
 
 class DilemaFactory
 {
