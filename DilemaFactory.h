@@ -1,11 +1,11 @@
 #ifndef DILEMAFACTORY_H
 #define DILEMAFACTORY_H
 
-#include "PlayerRandom.h"
-#include "PlayerRandomNotRisky.h"
-#include "PlayerAltruist.h"
-#include "PlayerGreed.h"
-#include "PlayerAltruistNotRisky.h"
+#include "Player/PlayerRandom.h"
+#include "Player/PlayerRandomNotRisky.h"
+#include "Player/PlayerAltruist.h"
+#include "Player/PlayerGreed.h"
+#include "Player/PlayerAltruistNotRisky.h"
 
 class DilemaFactory
 {
