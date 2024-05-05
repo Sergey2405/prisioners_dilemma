@@ -4,7 +4,7 @@
 DilemaFactory::DilemaFactory() :
     m_players(QList<Player*>())
 {
-//    componateTypeList();
+    componateTypeList();
 //    m_players.push_back(new PlayerRandom());
 //    m_players.push_back(new PlayerRandomNotRisky());
     m_players.push_back(new PlayerAltruist());
@@ -33,14 +33,14 @@ void DilemaFactory::playSeries(int player1Ix, int player2Ix, int numberOfGames)
 
 QStringList *DilemaFactory::typeList()
 {
-    return m_typeList;
+    return &m_typeList;
 }
 
 void DilemaFactory::componateTypeList()
 {
-    m_typeList->push_back((new PlayerAltruist())->metaObject()->className());
-    m_typeList->push_back((new PlayerAltruistNotRisky())->metaObject()->className());
-    m_typeList->push_back((new PlayerGreed())->metaObject()->className());
-    m_typeList->push_back((new PlayerRandom())->metaObject()->className());
-    m_typeList->push_back((new PlayerRandomNotRisky())->metaObject()->className());
+    m_typeList.push_back((new PlayerAltruist())->metaObject()->className());
+    m_typeList.push_back((new PlayerAltruistNotRisky())->metaObject()->className());
+    m_typeList.push_back((new PlayerGreed())->metaObject()->className());
+    m_typeList.push_back((new PlayerRandom())->metaObject()->className());
+    m_typeList.push_back((new PlayerRandomNotRisky())->metaObject()->className());
 }

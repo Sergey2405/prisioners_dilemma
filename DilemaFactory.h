@@ -17,7 +17,7 @@ public:
 
 protected:
     QList<Player*> m_players;
-    QStringList *m_typeList;
+    QStringList m_typeList;
 
 private:
     void componateTypeList();

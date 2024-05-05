@@ -5,6 +5,7 @@
 
 class PlayerGreed : public Player
 {
+    Q_OBJECT
 public:
     PlayerGreed();
 

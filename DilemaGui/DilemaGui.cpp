@@ -1,6 +1,8 @@
 #include "DilemaGui.h"
 #include "ui_DilemaGui.h"
 
+#include <QDebug>
+
 DilemaGui::DilemaGui(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::DilemaGui)
@@ -19,6 +21,6 @@ DilemaGui::~DilemaGui()
 
 void DilemaGui::fillComboboxes()
 {
-//    ui->comboBox  ->addItems(*m_dilemaFactory->typeList());
-//    ui->comboBox_2->addItems(*m_dilemaFactory->typeList());
+    ui->comboBox  ->addItems(*(m_dilemaFactory->typeList()));
+    ui->comboBox_2->addItems(*(m_dilemaFactory->typeList()));
 }

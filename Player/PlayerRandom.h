@@ -5,6 +5,7 @@
 
 class PlayerRandom : public Player
 {
+    Q_OBJECT
 public:
     PlayerRandom();
 
