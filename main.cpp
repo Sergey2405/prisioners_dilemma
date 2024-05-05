@@ -1,4 +1,3 @@
-#include "mainwindow.h"
 #include "DilemaFactory.h" // TODO: remove
 #include "DilemaGui/DilemaGui.h"
 

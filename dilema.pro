@@ -14,14 +14,9 @@ include("Player/Player.pri")
 SOURCES += \
     DilemaFactory.cpp \
     main.cpp \
-    mainwindow.cpp
 
 HEADERS += \
-    DilemaFactory.h \
-    mainwindow.h
-
-FORMS += \
-    mainwindow.ui
+    DilemaFactory.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
