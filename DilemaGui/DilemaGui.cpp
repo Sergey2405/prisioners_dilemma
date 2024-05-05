@@ -2,7 +2,7 @@
 #include "ui_DilemaGui.h"
 
 DilemaGui::DilemaGui(QWidget *parent) :
-    QDialog(parent),
+    QWidget(parent),
     ui(new Ui::DilemaGui)
 {
     ui->setupUi(this);

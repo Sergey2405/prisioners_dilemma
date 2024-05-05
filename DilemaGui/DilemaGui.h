@@ -1,13 +1,13 @@
 #ifndef DILEMAGUI_H
 #define DILEMAGUI_H
 
-#include <QDialog>
+#include <QWidget>
 
 namespace Ui {
 class DilemaGui;
 }
 
-class DilemaGui : public QDialog
+class DilemaGui : public QWidget
 {
     Q_OBJECT
 
