@@ -13,9 +13,14 @@ public:
     DilemaFactory();
 
     void playSeries(int player1Ix, int player2Ix, int numberOfGames);
+    QStringList *typeList();
 
 protected:
     QList<Player*> m_players;
+    QStringList *m_typeList;
+
+private:
+    void componateTypeList();
 
 };
 

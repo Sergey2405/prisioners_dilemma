@@ -1,6 +1,8 @@
 #ifndef DILEMAGUI_H
 #define DILEMAGUI_H
 
+#include "DilemaFactory.h"
+
 #include <QWidget>
 
 namespace Ui {
@@ -15,8 +17,11 @@ public:
     explicit DilemaGui(QWidget *parent = nullptr);
     ~DilemaGui();
 
+    void fillComboboxes();
+
 private:
     Ui::DilemaGui *ui;
+    DilemaFactory *m_dilemaFactory;
 };
 
 #endif // DILEMAGUI_H

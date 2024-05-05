@@ -5,9 +5,11 @@
 
 class PlayerAltruistNotRisky : public Player
 {
+    Q_OBJECT
 public:
     PlayerAltruistNotRisky();
 
+//    virtual QString type() override;
     virtual bool comply() override;
 };
 

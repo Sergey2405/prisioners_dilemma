@@ -12,13 +12,16 @@
 
 #include <QRandomGenerator>
 #include <QObject>
+#include <QString>
 
-class Player
+class Player : public QObject
 {
+//    Q_OBJECT
 public:
     Player();
     virtual ~Player();
 
+//    virtual QString type() = 0;
     void playGame(Player *opponent, bool complyPlayer,  bool complyOpponent);
     virtual void playGame(Player *opponent);
     virtual bool comply();

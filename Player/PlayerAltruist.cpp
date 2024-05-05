@@ -2,7 +2,6 @@
 
 PlayerAltruist::PlayerAltruist()
 {
-
 }
 
 bool PlayerAltruist::comply()
