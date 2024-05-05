@@ -10,7 +10,6 @@ DilemaFactory::DilemaFactory() :
     m_players.push_back(new PlayerAltruist());
     m_players.push_back(new PlayerAltruistNotRisky());
 //    m_players.push_back(new PlayerGreed);
-    qDebug() << "DilemaFactory::DilemaFactory" << m_players[0]->metaObject()->className();
 
     playSeries(0,1,50);
 

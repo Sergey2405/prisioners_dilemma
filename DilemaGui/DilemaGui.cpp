@@ -21,6 +21,6 @@ DilemaGui::~DilemaGui()
 
 void DilemaGui::fillComboboxes()
 {
-    ui->comboBox  ->addItems(*(m_dilemaFactory->typeList()));
-    ui->comboBox_2->addItems(*(m_dilemaFactory->typeList()));
+    ui->comboBoxPlayer1->addItems(*(m_dilemaFactory->typeList()));
+    ui->comboBoxPlayer2->addItems(*(m_dilemaFactory->typeList()));
 }

@@ -10,11 +10,6 @@ Player::~Player()
 
 }
 
-//QString Player::type()
-//{
-//    return this->metaObject()->className();
-//}
-
 void Player::playGame(Player *opponent, bool complyPlayer, bool complyOpponent )
 {
     if(complyPlayer && complyOpponent) {

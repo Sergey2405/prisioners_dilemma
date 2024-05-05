@@ -9,7 +9,6 @@ class PlayerAltruistNotRisky : public Player
 public:
     PlayerAltruistNotRisky();
 
-//    virtual QString type() override;
     virtual bool comply() override;
 };
 
