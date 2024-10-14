@@ -19,6 +19,9 @@ public:
 
     void fillComboboxes();
 
+private slots:
+    void on_pushButtonPlay_clicked();
+
 private:
     Ui::DilemaGui *ui;
     DilemaFactory *m_dilemaFactory;

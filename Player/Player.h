@@ -1,6 +1,7 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
+//  TODO: move these macros to private constants
 #define PLAYER_WIN_LOSE         5
 #define PLAYER_WIN_WIN          3
 #define PLAYER_LOSE_LOSE        1
@@ -29,7 +30,6 @@ public:
 protected:
     QList<qint8> m_history;
     int m_balance;
-
 };
 
 #endif // PLAYER_H

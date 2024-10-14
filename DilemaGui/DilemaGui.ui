@@ -28,7 +28,7 @@
     </spacer>
    </item>
    <item row="3" column="4">
-    <widget class="QComboBox" name="comboBoxPlayer2"/>
+    <widget class="QComboBox" name="comboBoxPlayer1"/>
    </item>
    <item row="10" column="4">
     <spacer name="verticalSpacer_5">
@@ -73,7 +73,7 @@
     </spacer>
    </item>
    <item row="9" column="4">
-    <widget class="QComboBox" name="comboBoxPlayer1"/>
+    <widget class="QComboBox" name="comboBoxPlayer2"/>
    </item>
    <item row="9" column="5">
     <widget class="QPushButton" name="pushButtonPlay">

@@ -1,9 +1,7 @@
 #include "PlayerGreed.h"
 
 PlayerGreed::PlayerGreed()
-{
-
-}
+{}
 
 bool PlayerGreed::comply()
 {

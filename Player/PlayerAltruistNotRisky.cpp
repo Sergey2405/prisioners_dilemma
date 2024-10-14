@@ -1,9 +1,7 @@
 #include "PlayerAltruistNotRisky.h"
 
 PlayerAltruistNotRisky::PlayerAltruistNotRisky()
-{
-
-}
+{}
 
 bool PlayerAltruistNotRisky::comply()
 {
