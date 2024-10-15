@@ -18,6 +18,8 @@ public:
     ~DilemaGui();
 
     void fillComboboxes();
+    void printResult();
+    void printResult(int player1Ix, int player2Ix, int numberOfGames);
 
 private slots:
     void on_pushButtonPlay_clicked();

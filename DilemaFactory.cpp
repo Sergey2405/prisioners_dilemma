@@ -22,19 +22,8 @@ DilemaFactory::DilemaFactory() :
 
 void DilemaFactory::playSeries(int player1Ix, int player2Ix, int numberOfGames)
 {
-    for(int i = 0; i < numberOfGames; i++) {
+    for(int i = 0; i < numberOfGames; i++)
         m_players[player1Ix]->playGame(m_players[player2Ix]);
-    }
-
-    // TODO: delete these debugs?
-    QString toPrint1 = "",
-            toPrint2 = "";
-    for(int i = 0; i < numberOfGames; i++) {
-        toPrint1 += " " + QString::number(m_players[player1Ix]->history().at(i));
-        toPrint2 += " " + QString::number(m_players[player2Ix]->history().at(i));
-    }
-    qDebug() << "Series player1" << toPrint1 << "\tbalance:" << m_players[player1Ix]->balance();
-    qDebug() << "Series player2" << toPrint2 << "\tbalance:" << m_players[player2Ix]->balance();
 }
 
 QStringList *DilemaFactory::typeList()
@@ -42,3 +31,12 @@ QStringList *DilemaFactory::typeList()
     return &m_typeList;
 }
 
+QList<qint8> DilemaFactory::history(int playerIx)
+{
+    return m_players[playerIx]->history();
+}
+
+int DilemaFactory::balance(int playerIx)
+{
+    return m_players[playerIx]->balance();
+}

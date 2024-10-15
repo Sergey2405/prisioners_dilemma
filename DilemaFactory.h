@@ -1,4 +1,4 @@
-#ifndef DILEMAFACTORY_H
+#ifndef DILEMAFACTORY_H//auto DilemaFactory::history(int playerIx)
 #define DILEMAFACTORY_H
 
 #include "Player/PlayerRandom.h"
@@ -14,6 +14,8 @@ public:
 
     void playSeries(int player1Ix, int player2Ix, int numberOfGames);
     QStringList *typeList();
+    QList<qint8> history(int playerIx);
+    int balance(int playerIx);
 
 protected:
     QList<Player*> m_players;
@@ -21,7 +23,6 @@ protected:
 
 private:
     void componateTypeList();
-
 };
 
 #endif // DILEMAFACTORY_H
