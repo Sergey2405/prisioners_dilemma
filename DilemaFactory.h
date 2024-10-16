@@ -1,11 +1,12 @@
 #ifndef DILEMAFACTORY_H//auto DilemaFactory::history(int playerIx)
 #define DILEMAFACTORY_H
 
-#include "Player/PlayerRandom.h"
-#include "Player/PlayerRandomNotRisky.h"
+#include "Player/PlayerAltruistNotRisky.h"
 #include "Player/PlayerAltruist.h"
 #include "Player/PlayerGreed.h"
-#include "Player/PlayerAltruistNotRisky.h"
+#include "Player/PlayerRandom.h"
+#include "Player/PlayerRandomNotRisky.h"
+#include "Player/PlayerPhilosopher.h"
 
 class DilemaFactory
 {

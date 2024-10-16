@@ -18,6 +18,9 @@ DilemaFactory::DilemaFactory() :
 
     m_players. push_back( new PlayerRandomNotRisky());
     m_typeList.push_back((new PlayerRandomNotRisky())->metaObject()->className());
+
+    m_players. push_back( new PlayerPhilosopher());
+    m_typeList.push_back((new PlayerPhilosopher())->metaObject()->className());
 }
 
 void DilemaFactory::playSeries(int player1Ix, int player2Ix, int numberOfGames)
