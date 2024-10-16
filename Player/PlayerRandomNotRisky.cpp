@@ -1,9 +1,7 @@
 #include "PlayerRandomNotRisky.h"
 
 PlayerRandomNotRisky::PlayerRandomNotRisky()
-{
-
-}
+{}
 
 bool PlayerRandomNotRisky::comply()
 {

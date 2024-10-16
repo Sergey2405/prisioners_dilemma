@@ -5,6 +5,7 @@
 
 class PlayerRandomNotRisky : public Player
 {
+    Q_OBJECT
 public:
     PlayerRandomNotRisky();
 

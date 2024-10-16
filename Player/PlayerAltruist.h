@@ -5,6 +5,7 @@
 
 class PlayerAltruist :public Player
 {
+    Q_OBJECT
 public:
     PlayerAltruist();
 

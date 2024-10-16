@@ -5,6 +5,7 @@
 
 class PlayerAltruistNotRisky : public Player
 {
+    Q_OBJECT
 public:
     PlayerAltruistNotRisky();
 

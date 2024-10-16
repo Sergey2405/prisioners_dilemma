@@ -2,9 +2,7 @@
 #include "Player.h"
 
 PlayerRandom::PlayerRandom()
-{
-
-}
+{}
 
 bool PlayerRandom::comply()
 {

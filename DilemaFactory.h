@@ -1,11 +1,11 @@
-#ifndef DILEMAFACTORY_H
+#ifndef DILEMAFACTORY_H//auto DilemaFactory::history(int playerIx)
 #define DILEMAFACTORY_H
 
-#include "PlayerRandom.h"
-#include "PlayerRandomNotRisky.h"
-#include "PlayerAltruist.h"
-#include "PlayerGreed.h"
-#include "PlayerAltruistNotRisky.h"
+#include "Player/PlayerRandom.h"
+#include "Player/PlayerRandomNotRisky.h"
+#include "Player/PlayerAltruist.h"
+#include "Player/PlayerGreed.h"
+#include "Player/PlayerAltruistNotRisky.h"
 
 class DilemaFactory
 {
@@ -13,10 +13,16 @@ public:
     DilemaFactory();
 
     void playSeries(int player1Ix, int player2Ix, int numberOfGames);
+    QStringList *typeList();
+    QList<qint8> history(int playerIx);
+    int balance(int playerIx);
 
 protected:
     QList<Player*> m_players;
+    QStringList m_typeList;
 
+private:
+    void componateTypeList();
 };
 
 #endif // DILEMAFACTORY_H
