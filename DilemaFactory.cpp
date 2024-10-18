@@ -13,6 +13,9 @@ DilemaFactory::DilemaFactory() :
     m_players. push_back( new PlayerGreed());
     m_typeList.push_back((new PlayerGreed())->metaObject()->className());
 
+    m_players. push_back( new PlayerPhilosopher());
+    m_typeList.push_back((new PlayerPhilosopher())->metaObject()->className());
+
     m_players. push_back( new PlayerRandom());
     m_typeList.push_back((new PlayerRandom())->metaObject()->className());
 
